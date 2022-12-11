@@ -1,13 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link rel="stylesheet" href="css/reset.css" />
     <link
             href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800;900&display=swap"
@@ -16,8 +14,39 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Car Sharing</title>
 </head>
-<body></body>
 <body>
+<header class="topbar">
+    <div class="container topbar__content">
+        <div class="topbar__logo">
+            <img
+                    src="images/logo.png"
+                    alt="connect icon"
+                    width="31px"
+                    height="35px"
+            />
+            <span class="text-red">Car</span>
+            <span>Sharing</span>
+        </div>
+
+        <nav>
+            <ul class="navmenu">
+                <li>
+                    <a class="link navmenu__item navmenu__item--active" href="#home"
+                    >Home</a
+                    >
+                </li>
+                <li><a class="link navmenu__item" href="#blog">Blog</a></li>
+                <li>
+                    <a class="link navmenu__item" href="#service">Service</a>
+                </li>
+                <li>
+                    <a class="link navmenu__item" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
 <main>
     <section id="home" class="home">
         <div class="home__background">
@@ -30,12 +59,8 @@
                     nisi ut aliquip ex ea commodo consequat.
                 </p>
                 <div class="home__buttons">
-                    <button class="home__button home__button--red">
-                        Share a car
-                    </button>
-                    <button class="home__button home__button--white">
-                        Key features
-                    </button>
+                    <a class="button button--primary button--lg"> Share a car </a>
+                    <a class="button button--secondary button--lg"> Key features </a>
                 </div>
             </div>
         </div>
